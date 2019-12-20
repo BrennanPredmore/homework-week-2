@@ -1,3 +1,5 @@
+
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-image: url(https://mail.google.com/mail/u/0?ui=2&ik=c4871c607b&attid=0.1&permmsgid=msg-a:r-3878229013756304830&th=16f00f3e31820da7&view=att&disp=safe&realattid=f_k44lufkn0);
@@ -13,7 +15,8 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 25px;
-}
+    }
+
 
 /* index image */
 #profile_image {
@@ -22,44 +25,36 @@ body {
     padding-left: 10px;
 }
 
+.portfolio-images {
+    width: 150px;
+    height: 125px;
+    margin: 25px;
+}
+
 /* hangman image */  
 #hangman {
-    padding-bottom: 25px;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
+    margin: 25px;
+
 }
 
 /*rpg-game image */
 #rpg-game {
-    padding-bottom: 25px;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
+    margin: 25px;
 }
 
 /*rock pager scissors image */
 #rock-paper-scissors {
-    padding-bottom: 25px;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
+    margin: 25px;
 }
 
 /* rutgers image */
 #rutgers-info-widget {
-    padding-bottom: 25px;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
+    margin: 25px;
 }
 
 /* trivia game image */
 #trivia-game {
-    padding-bottom: 25px;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
+    margin: 25px;
 }
 
 /* paragraph for index.html */
@@ -129,21 +124,19 @@ input[type=text], select, textarea {
 } 
 
 /* main content div for contact page */
-.container {
+.my-container {
     background-color: #ffffff;
     width: 66.6%;
     height: 66.6%;
     margin: auto;
+    margin-top: 15px;
     padding-bottom: 10px;
     padding-right: 10px;
     padding-left: 10px;
-    position: fixed;
-    top: 17%;
-    left: 15%;
     border: thin;
     border-style: solid;
     border-color: #dddddd;
-  }
+  } 
 
 
 /* footer for contact/portfolio pages */
@@ -158,4 +151,23 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+    border-top: 8px solid #4aaaa5;
+
 }
+
+
+
+/* Greater than 641px and less than 990px, Tablet */
+@media (min-width:641px) and (max-width:990px) {
+    body {
+       text-align: center;
+    }
+
+}
+
+/* Less than 640px, Mobile */
+@media screen and (max-width:641px) {
+  body {
+        text-align: center; 
+    }
+  }
